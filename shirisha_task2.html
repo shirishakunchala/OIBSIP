@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Admiration Page</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+      overflow-x:hidden;
+      color:white;
+    }
+
+    .hero{
+      width:100%;
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:40px;
+    }
+
+    .card{
+      max-width:1000px;
+      width:100%;
+      background:rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.2);
+      backdrop-filter:blur(15px);
+      border-radius:25px;
+      overflow:hidden;
+      box-shadow:0 10px 40px rgba(0,0,0,0.4);
+      animation:fadeIn 1.5s ease;
+    }
+
+    .top-section{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:center;
+      padding:40px;
+      gap:40px;
+    }
+
+    .image-box{
+      flex:1;
+      min-width:280px;
+      text-align:center;
+    }
+
+    .image-box img{
+      width:320px;
+      max-width:100%;
+      border-radius:20px;
+      border:5px solid rgba(255,255,255,0.4);
+      transition:0.5s;
+      box-shadow:0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .image-box img:hover{
+      transform:scale(1.05);
+    }
+
+    .content{
+      flex:1;
+      min-width:300px;
+    }
+
+    .content h1{
+      font-size:50px;
+      color:#ffd700;
+      margin-bottom:15px;
+    }
+
+    .content h3{
+      font-size:24px;
+      margin-bottom:20px;
+      color:#f1f1f1;
+    }
+
+    .content p{
+      font-size:18px;
+      line-height:1.8;
+      margin-bottom:18px;
+      color:#e6e6e6;
+      text-align:justify;
+    }
+
+    .qualities{
+      padding:40px;
+      background:rgba(255,255,255,0.05);
+    }
+
+    .qualities h2{
+      text-align:center;
+      margin-bottom:30px;
+      font-size:36px;
+      color:#ffd700;
+    }
+
+    .quality-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+    }
+
+    .quality-card{
+      background:rgba(255,255,255,0.08);
+      padding:25px;
+      border-radius:18px;
+      text-align:center;
+      transition:0.4s;
+      border:1px solid rgba(255,255,255,0.15);
+    }
+
+    .quality-card:hover{
+      transform:translateY(-10px);
+      background:rgba(255,255,255,0.15);
+    }
+
+    .quality-card h4{
+      font-size:22px;
+      margin-bottom:12px;
+      color:#ffdd57;
+    }
+
+    .quality-card p{
+      font-size:16px;
+      color:#ddd;
+      line-height:1.6;
+    }
+
+    .quote-section{
+      padding:40px;
+      text-align:center;
+    }
+
+    .quote{
+      font-size:28px;
+      font-style:italic;
+      color:#ffffff;
+      line-height:1.8;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:rgba(0,0,0,0.2);
+      font-size:16px;
+      color:#ddd;
+    }
+
+    @keyframes fadeIn{
+
+      from{
+        opacity:0;
+        transform:translateY(40px);
+      }
+
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+
+    }
+
+    @media(max-width:768px){
+
+      .content h1{
+        font-size:38px;
+      }
+
+      .content h3{
+        font-size:20px;
+      }
+
+      .content p{
+        font-size:16px;
+      }
+
+      .quote{
+        font-size:22px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+
+    <div class="card">
+
+      <div class="top-section">
+
+        <div class="image-box">
+          <img src="https://cdn.britannica.com/56/148856-004-2F59E2D9/APJ-2008.jpg" alt="Dr APJ Abdul Kalam">
+        </div>
+
+        <div class="content">
+
+          <h1>Dr. A.P.J Abdul Kalam</h1>
+
+          <h3>The Missile Man of India 🇮🇳</h3>
+
+          <p>
+            Dr. A.P.J Abdul Kalam was one of India's most respected scientists and the 11th President of India. 
+            He played a major role in India's missile and nuclear programs and inspired millions of students through his vision, humility, and dedication.
+          </p>
+
+          <p>
+            I admire Dr. Kalam because he believed in dreams, hard work, and education. 
+            Despite achieving great success, he remained simple, kind-hearted, and deeply connected with students and young minds.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="qualities">
+
+        <h2>Why I Admire Him</h2>
+
+        <div class="quality-grid">
+
+          <div class="quality-card">
+            <h4>Inspiring Leader</h4>
+            <p>He motivated millions of students to dream big and work hard for the nation.</p>
+          </div>
+
+          <div class="quality-card">
+            <h4>Great Scientist</h4>
+            <p>His contributions to ISRO and DRDO made India proud in science and technology.</p>
+          </div>
+
+          <div class="quality-card">
+            <h4>Simple Personality</h4>
+            <p>Even as President, he lived a humble and disciplined life with strong values.</p>
+          </div>
+
+          <div class="quality-card">
+            <h4>Education Supporter</h4>
+            <p>He always encouraged students to learn, innovate, and achieve success.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="quote-section">
+
+        <p class="quote">
+          “Dream, dream, dream. Dreams transform into thoughts and thoughts result in action.”
+        </p>
+
+      </div>
+
+      <footer>
+      </footer>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
